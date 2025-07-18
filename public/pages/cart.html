@@ -1,0 +1,46 @@
+<!-- public/pages/cart.html -->
+<div class="lg:container mx-auto px-6 py-10">
+  
+  <nav aria-label="Breadcrumb" class="flex items-center text-gray-500 text-sm mb-4 md:mb-8">
+    <a href="/" class="hover:text-gray-900 transition-colors duration-300 font-medium">Inicio</a>
+    <svg class="w-4 h-4 mx-2 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+    </svg>
+    <a href="/shop" class="hover:text-gray-900 transition-colors duration-300 font-medium">Productos</a>
+    <svg class="w-4 h-4 mx-2 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+    </svg>  
+  </nav>
+
+  <h2 class="text-red-500 mb-10 decorative-line font-tiktok-titles">
+    Carrito <span class="text-black"> de Compras</span>
+  </h2>
+
+  <div id="cart" class="space-y-4">
+    <!-- Los productos se mostrarán aquí -->
+
+     <div class="overflow-x-auto">
+      <table class="bg-white table-responsive w-full">
+        <thead class="bg-white border-b text-center">
+          <tr>
+            <th class="p-4">Imagen</th>
+            <th class="p-4">Nombre</th>
+            <th class="p-4">Precio</th>
+            <th class="p-4">Cantidad</th>
+            <th class="p-4">Subtotal</th>
+            <th class="p-4">Acción</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Se insertan los productos dinámicamente -->
+        </tbody>
+      </table>
+      <div id="cart-total" class="text-right mt-4 text-xl font-bold">
+        Total: S/ 0.00
+      </div>
+    </div>
+
+    <div id="cart-pay-btn"></div>
+
+  </div>
+</div>

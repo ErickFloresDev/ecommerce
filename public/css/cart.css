@@ -1,0 +1,20 @@
+.font-tiktok-cart-name {
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 16px;
+}
+
+.font-tiktok-cart-brand {
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 14px;
+}
+
+thead th {
+    font-family: "TikTok Sans", sans-serif !important;
+    font-size: 16px;
+    font-weight: normal;
+    color: black
+}
+
+.file-cart{
+    width: 150px !important;
+}

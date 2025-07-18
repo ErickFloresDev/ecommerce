@@ -1,0 +1,60 @@
+
+/* MUESTRA (...) CUANDO LA INFORMACION EXEDE DE COLUMNA */
+.truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+
+.font-tiktok-product{
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 18px;
+}
+
+.font-tiktok-category{
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 16px;
+}
+
+.font-tiktok-offert{
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 12px;
+}
+
+.font-tiktok-price{
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .font-tiktok-product{
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 16px;
+  }
+  .font-tiktok-category{
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 12px;
+  }
+  .font-tiktok-offert{
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 10px;
+  }
+  .font-tiktok-price{
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 13px;
+  }
+
+}
+
+.cart-style{
+  background-color: rgb(255, 255, 255);
+  border: 1px rgba(136, 136, 136, 0.301) solid;
+}
+
+.cart-style:hover{
+  background-color: rgba(202, 202, 202, 0.158);
+  border: 1px rgba(136, 136, 136, 0.301) solid;
+}
+

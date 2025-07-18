@@ -1,0 +1,43 @@
+body{
+    margin-top: 60px;
+}
+
+.bg-black-gray{
+  background-color: #171717;
+}
+
+.font-tiktok-titles{
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.font-tiktok-sub-titles{
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.font-tiktok-text{
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 18px;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+  .font-tiktok-titles{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .font-tiktok-sub-titles{
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .font-tiktok-text{
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 16px;
+  }
+}

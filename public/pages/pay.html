@@ -1,0 +1,38 @@
+<section class="max-w-3xl mx-auto p-6 bg-white rounded shadow space-y-6">
+  <h2 class="text-2xl font-bold mb-4">Formulario de Pago</h2>
+
+  <div id="pay-total" class="text-xl font-semibold text-right mb-4">Total: S/ 0.00</div>
+
+  <form id="payment-form" class="space-y-4">
+    <div class="grid md:grid-cols-2 gap-4">
+      <input type="text" placeholder="Nombres" class="w-full border p-2 rounded" required>
+      <input type="text" placeholder="Apellidos" class="w-full border p-2 rounded" required>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <input type="email" placeholder="Correo electrónico" class="w-full border p-2 rounded" required>
+      <input type="tel" placeholder="Teléfono" class="w-full border p-2 rounded" required>
+    </div>
+    <textarea placeholder="Dirección de envío" class="w-full border p-2 rounded" rows="3" required></textarea>
+
+    <div>
+      <p class="font-semibold mb-2">Método de pago</p>
+      <div class="flex gap-4">
+        <button type="button" class="qr-btn border px-4 py-2 rounded hover:bg-gray-100" data-method="yape">Yape</button>
+        <button type="button" class="qr-btn border px-4 py-2 rounded hover:bg-gray-100" data-method="plin">Plin</button>
+        <button type="button" class="qr-btn border px-4 py-2 rounded hover:bg-gray-100" data-method="bbva">BBVA</button>
+      </div>
+    </div>
+
+    <div id="qr-display" class="my-4 hidden">
+      <p class="mb-2 font-medium">Escanea este código QR:</p>
+      <img id="qr-image" src="" alt="QR" class="w-48 border rounded" />
+    </div>
+
+    <div>
+      <label class="block mb-2 font-medium">Sube la evidencia de pago:</label>
+      <input type="file" accept="image/*" class="w-full p-2 border rounded">
+    </div>
+
+    <button type="submit" class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800">Enviar Pedido</button>
+  </form>
+</section>
