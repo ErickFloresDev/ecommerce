@@ -21,7 +21,7 @@ export async function init() {
   const html = products.map(product => `
     <div class="bg-white flex flex-col justify-between rounded-xl border overflow-hidden">
       <a href="/detail" data-id="${product.id}" class="product-link focus:outline-none">
-        <div class="relative flex justify-center items-center p-2 md:p-6">
+        <div class="relative flex justify-center items-center py-6 md:p-6">
           <img src="${product.image}" alt="${product.name}" class="w-auto h-48 sm:h-40 md:h-48 object-cover">
           ${product.price_end < product.price ? '<span class="absolute top-2 right-2 bg-white text-red-500 border py-0  px-2 rounded-full  font-tiktok-offert">Oferta</span>' : ''}
         </div>
@@ -38,8 +38,8 @@ export async function init() {
             </div>
           </div>
           
-          <div class="flex flex-wrap justify-between items-center gap-2 mt-4">
-            <a href="/detail" data-id="${product.id}" class="product-link font-tiktok-category bg-white border py-2 px-4 rounded-lg flex items-center justify-center flex-1 sm:flex-auto">
+          <div class="flex flex-col md:flex-row md:flex-wrap justify-between items-center gap-2 mt-4">
+            <a href="/detail" data-id="${product.id}" class="product-link font-tiktok-category bg-white border py-2 px-4 rounded-lg flex items-center justify-center flex-1 sm:flex-auto w-full md:w-auto">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye mr-2">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
@@ -47,7 +47,7 @@ export async function init() {
               </svg>
               Ver detalle
             </a>
-            <button class="add-to-cart-btn bg-black font-tiktok-category text-white py-2 px-4 rounded-lg flex items-center justify-center flex-1 sm:flex-auto" data-id="${product.id}">
+            <button class="add-to-cart-btn bg-black font-tiktok-category text-white py-2 px-4 rounded-lg flex items-center justify-center flex-1 sm:flex-auto  w-full md:w-auto" data-id="${product.id}">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart mr-2">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />

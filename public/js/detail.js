@@ -36,14 +36,6 @@ export function init() {
           ${product.brand ? `<p class="text-gray-500 text-sm uppercase tracking-wide">${product.brand}</p>` : ''}
         </div>
 
-        <!-- Rating (si existe) -->
-        <div class="flex items-center space-x-2">
-          <div class="flex text-yellow-400">
-            ${'★'.repeat(5)}
-          </div>
-          <span class="text-sm text-gray-500">4.5 (120 reviews)</span>
-        </div>
-
         <!-- Precio -->
         <div class="space-y-1">
           <div class="flex items-baseline space-x-3">
@@ -73,7 +65,6 @@ export function init() {
         <!-- Stock -->
         <div class="border-t pt-4">
           <div class="flex items-center justify-between">
-            <span class="text-sm text-gray-500">Estado del producto:</span>
               <span class="${product.message_stock === 'Disponible' ? 'text-green-500' : product.message_stock === 'Limitado' ? 'text-yellow-500' : 'text-red-500'} text-sm font-medium">
                 ${product.message_stock}
               </span>
