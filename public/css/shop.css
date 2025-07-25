@@ -4,9 +4,15 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 180px;
+  max-width: 70%;
 }
 
+.truncate-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
 
 .font-tiktok-product{
   font-family: "TikTok Sans", sans-serif;
