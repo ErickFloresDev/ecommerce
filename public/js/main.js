@@ -13,9 +13,9 @@ function render(path) {
 }
 
 // Definir rutas
-page('/', () => render('home'));
+page('/', () => render('shop'));
+page('/home', () => render('home'));
 page('/about', () => render('about'));
-page('/shop', () => render('shop'));
 page('/detail', () => render('detail'));
 page('/cart', () => render('cart'));
 page('/pay', () => render('pay'));

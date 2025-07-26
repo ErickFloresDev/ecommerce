@@ -27,37 +27,22 @@
 
 <body class="bg-gray-100">
 
-  <!-- <nav class="flex justify-around p-4 bg-white shadow-md">
-    <a href="/" class="nav-link hover:text-blue-500">Home</a>
-    <a href="/shop" class="nav-link hover:text-blue-500">Shop</a>
-    <a href="/detail" class="nav-link hover:text-blue-500">Detail</a>
-    <a href="/cart" class="nav-link hover:text-blue-500">Cart</a>
-  </nav> -->
-
 
   <!-- HEADER (barra superior) -->
-  <header class="navbar">
-    <div class="flex items-center space-x-3">
-      <a href="/"><img src="/images/logo.png" alt="Logo" class="w-auto h-5 md:h-7 border-image"></a>
-      <div class="text-white font-tiktok-logo">
-        <a href="/"><span class="text-red-500">Biker </span>Cañete </a>
-      </div>
-    </div>
-
-    <div class="">
-      <button class="btn-toggle hidden md:inline-block">
-        <a href="/cart">
-          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
-        </a>
-      </button>
-      <button onclick="toggleSidebar()" class="btn-toggle">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M4 6l16 0" />
-          <path d="M4 12l16 0" />
-          <path d="M4 18l16 0" />
+  <header class="navbar bg-gray-800 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="/" class="font-tiktok-titles">Biker Cañete</a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="/home" class="font-tiktok-sub-titles hover:text-gray-400">Inicio</a>
+        <a href="/" class="font-tiktok-sub-titles hover:text-gray-400">Catálogo</a>
+        <a href="/cart" class="font-tiktok-sub-titles hover:text-gray-400">Carrito</a>
+        <a href="/contact" class="font-tiktok-sub-titles hover:text-gray-400">Contacto</a>
+      </nav>
+      <button onclick="toggleSidebar()" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-menu-2">
+          <path d="M4 6h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 18h16"></path>
         </svg>
       </button>
     </div>

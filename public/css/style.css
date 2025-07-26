@@ -1,5 +1,5 @@
 body{
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 
@@ -10,14 +10,13 @@ body{
 
 .font-tiktok-titles{
   font-family: "TikTok Sans", sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 400;
 }
 
 .font-tiktok-sub-titles{
   font-family: "TikTok Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
 }
 
 .font-tiktok-text{
